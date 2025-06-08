@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Rogue</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo and Brand -->
+        <div class="logo-section">
+          <a href="home.html" class="logo-link">
+            <span class="brand-text">Little</span>
+            <div class="logo-placeholder">
+                <img src="img/logo.png" width="100%" height="auto">
+            </div>
+            <span class="brand-text">Rogue</span>
+          </a>
+        </div>
+  
+        <!-- Shopping Cart -->
+        <div class="cart-container">
+            <button class="cart-button" onclick="toggleCart()">
+              <svg
+                class="cart-icon"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.25 1.25H6.25L9.6 17.9875C9.71431 18.563 10.0274 19.0799 10.4844 19.4479C10.9415 19.8158 11.5134 20.0112 12.1 20H24.25C24.8366 20.0112 25.4085 19.8158 25.8656 19.4479C26.3226 19.0799 26.6357 18.563 26.75 17.9875L28.75 7.5H7.5M12.5 26.25C12.5 26.9404 11.9404 27.5 11.25 27.5C10.5596 27.5 10 26.9404 10 26.25C10 25.5596 10.5596 25 11.25 25C11.9404 25 12.5 25.5596 12.5 26.25ZM26.25 26.25C26.25 26.9404 25.6904 27.5 25 27.5C24.3096 27.5 23.75 26.9404 23.75 26.25C23.75 25.5596 24.3096 25 25 25C25.6904 25 26.25 25.5596 26.25 26.25Z"
+                  stroke="#F3F3F3"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+  
+        <!-- Navigation -->
+        <nav class="navigation">
+          <div class="nav-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+    <main class="main-content">
+        <div class="container content-page">
+          <!-- Page Title -->
+          <div class="page-title">
+            <h1>Contact</h1>
+          </div>
+  
+          <!-- Contact Content -->
+          <div class="contact-content">
+            <div class="contact-section">
+                <h2 class="contact-section-title">Visit Us</h2>
+            <p class="contact-details">
+                12 Drewery Lane<br>
+                Melbourne, VIC 3000<br>
+                Australia
+            </p>
+            </div>
+
+            <div class="contact-section">
+                <h2 class="contact-section-title">Opening Hours</h2>
+            <p class="contact-details">
+              Monday - Friday: 7:00 AM - 4:00 PM<br>
+              Saturday - Sunday: 8:00 AM - 3:00 PM<br>
+            </p>
+            </div>
+  
+            <div class="contact-section">
+                <h2 class="contact-section-title">Get in Touch</h2>
+            <p class="contact-details">
+              Email: hello@littlerogue.com.au<br>
+              Phone: +61 3 9123 4567
+            </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo and Brand -->
+          <div class="footer-logo">
+            <a href="home.html" class="footer-logo-link">
+              <span class="footer-brand-text">Little</span>
+              <div class="footer-logo-placeholder">
+                <img src="img/logo.png" width="100%" height="auto">
+              </div>
+              <span class="footer-brand-text">Rogue</span>
+            </a>
+          </div>
+  
+          <!-- Address -->
+          <div class="footer-address">
+            <p>12 Drewery Lane<br>Melbourne, VIC 3000<br>Australia</p>
+          </div>
+  
+          <!-- Social Media Icons -->
+          <div class="social-media">
+            <a href="https://www.instagram.com/littleroguemelbourne/?hl=en" target="_blank" class="social-link" aria-label="Instagram">
+              <svg
+                class="social-icon"
+                width="43"
+                height="43"
+                viewBox="0 0 43 43"
+                fill="none"
+                stroke="#D9D9D9"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M31.3541 11.6459H31.372M12.5416 3.58337H30.4583C35.4058 3.58337 39.4166 7.59416 39.4166 12.5417V30.4584C39.4166 35.4059 35.4058 39.4167 30.4583 39.4167H12.5416C7.59403 39.4167 3.58325 35.4059 3.58325 30.4584V12.5417C3.58325 7.59416 7.59403 3.58337 12.5416 3.58337ZM28.6666 20.3713C28.8877 21.8624 28.633 23.3853 27.9387 24.7233C27.2445 26.0613 26.146 27.1463 24.7995 27.824C23.453 28.5018 21.9271 28.7377 20.4389 28.4982C18.9506 28.2587 17.5757 27.556 16.5098 26.4901C15.4439 25.4242 14.7413 24.0494 14.5018 22.5611C14.2623 21.0728 14.4982 19.5469 15.1759 18.2005C15.8536 16.854 16.9387 15.7555 18.2767 15.0612C19.6147 14.367 21.1376 14.1123 22.6287 14.3334C24.1497 14.5589 25.5578 15.2677 26.645 16.3549C27.7323 17.4422 28.441 18.8503 28.6666 20.3713Z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/LittleRogueMelbourne/" target="_blank" class="social-link" aria-label="Facebook">
+              <svg
+                class="social-icon"
+                width="43"
+                height="43"
+                viewBox="0 0 43 43"
+                fill="none"
+                stroke="#D9D9D9"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M32.2501 3.58337H26.8751C24.4992 3.58337 22.2206 4.5272 20.5406 6.20721C18.8606 7.88722 17.9167 10.1658 17.9167 12.5417V17.9167H12.5417V25.0834H17.9167V39.4167H25.0834V25.0834H30.4584L32.2501 17.9167H25.0834V12.5417C25.0834 12.0665 25.2722 11.6108 25.6082 11.2748C25.9442 10.9388 26.3999 10.75 26.8751 10.75H32.2501V3.58337Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+  
+      <script src="js/script.js"></script>
+    </body>
+  </html>
